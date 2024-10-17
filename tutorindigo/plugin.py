@@ -153,7 +153,7 @@ COPY indigo/env.config.jsx /openedx/app/
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
 RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 #RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^3.1.3'
-RUN npm install @edly-io/indigo-frontend-component-footer@^2.0.0
+#RUN npm install @edly-io/indigo-frontend-component-footer@^2.0.0
 
 COPY indigo/env.config.jsx /openedx/app/
 """,
