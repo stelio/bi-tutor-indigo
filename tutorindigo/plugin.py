@@ -110,8 +110,7 @@ hooks.Filters.ENV_PATCHES.add_items(
             "mfe-dockerfile-post-npm-install-learning",
             """
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
-RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master' --registry=$NPM_REGISTRY
-#RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^2.1.1'
+RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^3.1.3'
 RUN npm install @edly-io/indigo-frontend-component-footer@^2.0.0
 
@@ -122,8 +121,7 @@ COPY indigo/env.config.jsx /openedx/app/
             "mfe-dockerfile-post-npm-install-authn",
             """
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
-RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master' --registry=$NPM_REGISTRY
-#RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^2.1.1'
+RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 """,
         ),
         # Tutor-Indigo v2.1 targets the styling updates in discussions and learner-dashboard MFE
@@ -132,8 +130,7 @@ RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.g
             "mfe-dockerfile-post-npm-install-discussions",
             """
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
-RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master' --registry=$NPM_REGISTRY
-#RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^2.1.1'
+RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^3.1.3'
 RUN npm install @edly-io/indigo-frontend-component-footer@^2.0.0
 
@@ -144,8 +141,7 @@ COPY indigo/env.config.jsx /openedx/app/
             "mfe-dockerfile-post-npm-install-learner-dashboard",
             """
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
-RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master' --registry=$NPM_REGISTRY
-#RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^2.1.1'
+RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 RUN npm install @edly-io/indigo-frontend-component-footer@^2.0.0
 
 COPY indigo/env.config.jsx /openedx/app/
@@ -155,8 +151,7 @@ COPY indigo/env.config.jsx /openedx/app/
             "mfe-dockerfile-post-npm-install-profile",
             """
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
-RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master' --registry=$NPM_REGISTRY
-#RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^2.1.1'
+RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^3.1.3'
 RUN npm install @edly-io/indigo-frontend-component-footer@^2.0.0
 
@@ -167,8 +162,7 @@ COPY indigo/env.config.jsx /openedx/app/
             "mfe-dockerfile-post-npm-install-account",
             """
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
-RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master' --registry=$NPM_REGISTRY
-#RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^2.1.1'
+RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^3.1.3'
 RUN npm install @edly-io/indigo-frontend-component-footer@^2.0.0
 
