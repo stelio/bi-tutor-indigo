@@ -109,6 +109,7 @@ hooks.Filters.ENV_PATCHES.add_items(
         (
             "mfe-dockerfile-post-npm-install-learning",
             """
+# learning
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
 RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^3.1.3'
@@ -120,6 +121,7 @@ COPY indigo/env.config.jsx /openedx/app/
         (
             "mfe-dockerfile-post-npm-install-authn",
             """
+# authn
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
 RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 """,
@@ -129,6 +131,7 @@ RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.g
         (
             "mfe-dockerfile-post-npm-install-discussions",
             """
+# discussions
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
 RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^3.1.3'
@@ -140,6 +143,7 @@ COPY indigo/env.config.jsx /openedx/app/
         (
             "mfe-dockerfile-post-npm-install-learner-dashboard",
             """
+# dashboard
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
 RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 RUN npm install @edly-io/indigo-frontend-component-footer@^2.0.0
@@ -150,6 +154,7 @@ COPY indigo/env.config.jsx /openedx/app/
         (
             "mfe-dockerfile-post-npm-install-profile",
             """
+# profile
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
 RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 #RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^3.1.3'
@@ -161,6 +166,7 @@ COPY indigo/env.config.jsx /openedx/app/
         (
             "mfe-dockerfile-post-npm-install-account",
             """
+# account
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
 RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git#master'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^3.1.3'
