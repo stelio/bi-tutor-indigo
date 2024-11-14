@@ -108,7 +108,6 @@ hooks.Filters.ENV_PATCHES.add_items(
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
 RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^1.0.0'
-RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-component-footer@^1.0.0'
 """,
         ),
         (
@@ -126,7 +125,6 @@ RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.g
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
 RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^1.0.0'
-RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-component-footer@^1.0.0'
 """,
         ),
         (
@@ -134,7 +132,6 @@ RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-com
             """
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
 RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git'
-RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-component-footer@^1.0.0'
 """,
         ),
         (
@@ -143,7 +140,7 @@ RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-com
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
 RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^1.0.0'
-RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-component-footer@^1.0.0'
+RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-component-footer@^1.1.0'
 """,
         ),
         (
@@ -152,7 +149,6 @@ RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-com
 ADD https://api.github.com/repos/stelio/bi-brand-openedx/git/refs/heads/master /tmp/gitref-brand
 RUN npm install '@edx/brand@git+https://git@github.com/stelio/bi-brand-openedx.git'
 RUN npm install '@edx/frontend-component-header@npm:@edly-io/indigo-frontend-component-header@^1.0.0'
-RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-component-footer@^1.0.0'
 """,
         ),
     ]
